@@ -15,9 +15,11 @@ app.get('/scan/:ip', (req, res) => {
   });
 });
 
-app.listen(port, '0.0.0.0', () => {
+
+app.listen(port, 'localhost', () => {
   console.log(`Backend is running on http://localhost:${port}`);
 });
+
 
 app.get('/', (req, res) => {
   res.send('Welcome to the IoT Threat Simulator');

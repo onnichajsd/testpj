@@ -5,7 +5,7 @@ function App() {
   const [result, setResult] = useState('');
 
   const handleScan = async () => {
-    const response = await fetch(`http://<EC2_IP>:3000/scan/${ip}`);
+    const response = await fetch(`http://13.229.125.120:3000/scan/${ip}`);
     const data = await response.json();
     setResult(data.result);
   };
